@@ -13,6 +13,13 @@
 		C68031D92A6E2AAB00FEF811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68031D72A6E2AAB00FEF811 /* Main.storyboard */; };
 		C68031DB2A6E2AAE00FEF811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68031DA2A6E2AAE00FEF811 /* Assets.xcassets */; };
 		C68031DE2A6E2AAE00FEF811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68031DC2A6E2AAE00FEF811 /* LaunchScreen.storyboard */; };
+		C68031E62A6E36C900FEF811 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031E52A6E36C900FEF811 /* SecondViewController.swift */; };
+		C68031E82A6E3C9B00FEF811 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031E72A6E3C9B00FEF811 /* WebviewViewController.swift */; };
+		C68031EA2A6E4DC600FEF811 /* FirstTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031E92A6E4DC600FEF811 /* FirstTabController.swift */; };
+		C68031EC2A6E4EF100FEF811 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031EB2A6E4EF100FEF811 /* AnimalCell.swift */; };
+		C68031EE2A6E604A00FEF811 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031ED2A6E604A00FEF811 /* DetailController.swift */; };
+		C68031F02A6E64CE00FEF811 /* SecondTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031EF2A6E64CE00FEF811 /* SecondTabController.swift */; };
+		C68031F22A6E6ADC00FEF811 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031F12A6E6ADC00FEF811 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		C68031DA2A6E2AAE00FEF811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C68031DD2A6E2AAE00FEF811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C68031DF2A6E2AAE00FEF811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C68031E52A6E36C900FEF811 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C68031E72A6E3C9B00FEF811 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
+		C68031E92A6E4DC600FEF811 /* FirstTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabController.swift; sourceTree = "<group>"; };
+		C68031EB2A6E4EF100FEF811 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
+		C68031ED2A6E604A00FEF811 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		C68031EF2A6E64CE00FEF811 /* SecondTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabController.swift; sourceTree = "<group>"; };
+		C68031F12A6E6ADC00FEF811 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,13 @@
 				C68031DA2A6E2AAE00FEF811 /* Assets.xcassets */,
 				C68031DC2A6E2AAE00FEF811 /* LaunchScreen.storyboard */,
 				C68031DF2A6E2AAE00FEF811 /* Info.plist */,
+				C68031E52A6E36C900FEF811 /* SecondViewController.swift */,
+				C68031E72A6E3C9B00FEF811 /* WebviewViewController.swift */,
+				C68031E92A6E4DC600FEF811 /* FirstTabController.swift */,
+				C68031EB2A6E4EF100FEF811 /* AnimalCell.swift */,
+				C68031ED2A6E604A00FEF811 /* DetailController.swift */,
+				C68031EF2A6E64CE00FEF811 /* SecondTabController.swift */,
+				C68031F12A6E6ADC00FEF811 /* MovieCell.swift */,
 			);
 			path = "My First Project";
 			sourceTree = "<group>";
@@ -138,9 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68031EE2A6E604A00FEF811 /* DetailController.swift in Sources */,
+				C68031F02A6E64CE00FEF811 /* SecondTabController.swift in Sources */,
+				C68031E62A6E36C900FEF811 /* SecondViewController.swift in Sources */,
+				C68031E82A6E3C9B00FEF811 /* WebviewViewController.swift in Sources */,
+				C68031EA2A6E4DC600FEF811 /* FirstTabController.swift in Sources */,
 				C68031D62A6E2AAB00FEF811 /* ViewController.swift in Sources */,
 				C68031D22A6E2AAB00FEF811 /* AppDelegate.swift in Sources */,
 				C68031D42A6E2AAB00FEF811 /* SceneDelegate.swift in Sources */,
+				C68031F22A6E6ADC00FEF811 /* MovieCell.swift in Sources */,
+				C68031EC2A6E4EF100FEF811 /* AnimalCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
