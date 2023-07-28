@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53AC7183FE5A75BBF7C55006 /* Pods_My_First_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE8F7CCA5EB75BC7845EC1 /* Pods_My_First_Project.framework */; };
 		C68031D22A6E2AAB00FEF811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031D12A6E2AAB00FEF811 /* AppDelegate.swift */; };
 		C68031D42A6E2AAB00FEF811 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031D32A6E2AAB00FEF811 /* SceneDelegate.swift */; };
 		C68031D62A6E2AAB00FEF811 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031D52A6E2AAB00FEF811 /* ViewController.swift */; };
@@ -20,9 +21,20 @@
 		C68031EE2A6E604A00FEF811 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031ED2A6E604A00FEF811 /* DetailController.swift */; };
 		C68031F02A6E64CE00FEF811 /* SecondTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031EF2A6E64CE00FEF811 /* SecondTabController.swift */; };
 		C68031F22A6E6ADC00FEF811 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031F12A6E6ADC00FEF811 /* MovieCell.swift */; };
+		C68031F62A6F6DAC00FEF811 /* PortalBeritaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031F52A6F6DAC00FEF811 /* PortalBeritaController.swift */; };
+		C68031F82A6F6F6400FEF811 /* BeritaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031F72A6F6F6400FEF811 /* BeritaCell.swift */; };
+		C68031FA2A6F711E00FEF811 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031F92A6F711E00FEF811 /* Api.swift */; };
+		C68031FC2A6F9FC500FEF811 /* TambahBeritaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68031FB2A6F9FC500FEF811 /* TambahBeritaController.swift */; };
+		C6D8F7B22A6FCEA300B7514D /* DetailBeritaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8F7B12A6FCEA300B7514D /* DetailBeritaController.swift */; };
+		C6D8F7B72A70C47700B7514D /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8F7B62A70C47700B7514D /* RegisterController.swift */; };
+		C6D8F7B92A70C4B900B7514D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8F7B82A70C4B900B7514D /* LoginController.swift */; };
+		C6D8F7BB2A70D24800B7514D /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8F7BA2A70D24800B7514D /* SplashScreenController.swift */; };
+		C6D8F7BD2A70D8ED00B7514D /* EditBeritaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8F7BC2A70D8ED00B7514D /* EditBeritaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71D3B0E741F6985F33EA61E5 /* Pods-My First Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My First Project.debug.xcconfig"; path = "Target Support Files/Pods-My First Project/Pods-My First Project.debug.xcconfig"; sourceTree = "<group>"; };
+		BF614EEF1CFA0F47757B11EC /* Pods-My First Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My First Project.release.xcconfig"; path = "Target Support Files/Pods-My First Project/Pods-My First Project.release.xcconfig"; sourceTree = "<group>"; };
 		C68031CE2A6E2AAB00FEF811 /* My First Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My First Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68031D12A6E2AAB00FEF811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C68031D32A6E2AAB00FEF811 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +50,16 @@
 		C68031ED2A6E604A00FEF811 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		C68031EF2A6E64CE00FEF811 /* SecondTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabController.swift; sourceTree = "<group>"; };
 		C68031F12A6E6ADC00FEF811 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		C68031F52A6F6DAC00FEF811 /* PortalBeritaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalBeritaController.swift; sourceTree = "<group>"; };
+		C68031F72A6F6F6400FEF811 /* BeritaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaCell.swift; sourceTree = "<group>"; };
+		C68031F92A6F711E00FEF811 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		C68031FB2A6F9FC500FEF811 /* TambahBeritaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahBeritaController.swift; sourceTree = "<group>"; };
+		C6D8F7B12A6FCEA300B7514D /* DetailBeritaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBeritaController.swift; sourceTree = "<group>"; };
+		C6D8F7B62A70C47700B7514D /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		C6D8F7B82A70C4B900B7514D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C6D8F7BA2A70D24800B7514D /* SplashScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
+		C6D8F7BC2A70D8ED00B7514D /* EditBeritaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBeritaController.swift; sourceTree = "<group>"; };
+		D3AE8F7CCA5EB75BC7845EC1 /* Pods_My_First_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_First_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +67,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AC7183FE5A75BBF7C55006 /* Pods_My_First_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345201C3B31A18F92FFD4780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3AE8F7CCA5EB75BC7845EC1 /* Pods_My_First_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C68031C52A6E2AAB00FEF811 = {
 			isa = PBXGroup;
 			children = (
 				C68031D02A6E2AAB00FEF811 /* My First Project */,
 				C68031CF2A6E2AAB00FEF811 /* Products */,
+				E0D1AD2E6909DCE00F8F7A91 /* Pods */,
+				345201C3B31A18F92FFD4780 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +103,7 @@
 		C68031D02A6E2AAB00FEF811 /* My First Project */ = {
 			isa = PBXGroup;
 			children = (
+				C6D8F7B52A70C45A00B7514D /* Auth */,
 				C68031D12A6E2AAB00FEF811 /* AppDelegate.swift */,
 				C68031D32A6E2AAB00FEF811 /* SceneDelegate.swift */,
 				C68031D52A6E2AAB00FEF811 /* ViewController.swift */,
@@ -84,8 +118,33 @@
 				C68031ED2A6E604A00FEF811 /* DetailController.swift */,
 				C68031EF2A6E64CE00FEF811 /* SecondTabController.swift */,
 				C68031F12A6E6ADC00FEF811 /* MovieCell.swift */,
+				C68031F52A6F6DAC00FEF811 /* PortalBeritaController.swift */,
+				C68031F72A6F6F6400FEF811 /* BeritaCell.swift */,
+				C68031F92A6F711E00FEF811 /* Api.swift */,
+				C68031FB2A6F9FC500FEF811 /* TambahBeritaController.swift */,
+				C6D8F7B12A6FCEA300B7514D /* DetailBeritaController.swift */,
+				C6D8F7BA2A70D24800B7514D /* SplashScreenController.swift */,
+				C6D8F7BC2A70D8ED00B7514D /* EditBeritaController.swift */,
 			);
 			path = "My First Project";
+			sourceTree = "<group>";
+		};
+		C6D8F7B52A70C45A00B7514D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C6D8F7B62A70C47700B7514D /* RegisterController.swift */,
+				C6D8F7B82A70C4B900B7514D /* LoginController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E0D1AD2E6909DCE00F8F7A91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71D3B0E741F6985F33EA61E5 /* Pods-My First Project.debug.xcconfig */,
+				BF614EEF1CFA0F47757B11EC /* Pods-My First Project.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C68031E22A6E2AAE00FEF811 /* Build configuration list for PBXNativeTarget "My First Project" */;
 			buildPhases = (
+				6F536C405BF1BF1328C52106 /* [CP] Check Pods Manifest.lock */,
 				C68031CA2A6E2AAB00FEF811 /* Sources */,
 				C68031CB2A6E2AAB00FEF811 /* Frameworks */,
 				C68031CC2A6E2AAB00FEF811 /* Resources */,
+				EACDFF3A43FD2CEE2352D486 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +215,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F536C405BF1BF1328C52106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My First Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EACDFF3A43FD2CEE2352D486 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My First Project/Pods-My First Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My First Project/Pods-My First Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My First Project/Pods-My First Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C68031CA2A6E2AAB00FEF811 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -161,11 +264,20 @@
 			files = (
 				C68031EE2A6E604A00FEF811 /* DetailController.swift in Sources */,
 				C68031F02A6E64CE00FEF811 /* SecondTabController.swift in Sources */,
+				C68031F82A6F6F6400FEF811 /* BeritaCell.swift in Sources */,
+				C6D8F7BD2A70D8ED00B7514D /* EditBeritaController.swift in Sources */,
 				C68031E62A6E36C900FEF811 /* SecondViewController.swift in Sources */,
 				C68031E82A6E3C9B00FEF811 /* WebviewViewController.swift in Sources */,
+				C68031FC2A6F9FC500FEF811 /* TambahBeritaController.swift in Sources */,
+				C68031F62A6F6DAC00FEF811 /* PortalBeritaController.swift in Sources */,
+				C6D8F7B22A6FCEA300B7514D /* DetailBeritaController.swift in Sources */,
+				C68031FA2A6F711E00FEF811 /* Api.swift in Sources */,
 				C68031EA2A6E4DC600FEF811 /* FirstTabController.swift in Sources */,
 				C68031D62A6E2AAB00FEF811 /* ViewController.swift in Sources */,
+				C6D8F7B92A70C4B900B7514D /* LoginController.swift in Sources */,
+				C6D8F7BB2A70D24800B7514D /* SplashScreenController.swift in Sources */,
 				C68031D22A6E2AAB00FEF811 /* AppDelegate.swift in Sources */,
+				C6D8F7B72A70C47700B7514D /* RegisterController.swift in Sources */,
 				C68031D42A6E2AAB00FEF811 /* SceneDelegate.swift in Sources */,
 				C68031F22A6E6ADC00FEF811 /* MovieCell.swift in Sources */,
 				C68031EC2A6E4EF100FEF811 /* AnimalCell.swift in Sources */,
@@ -310,6 +422,7 @@
 		};
 		C68031E32A6E2AAE00FEF811 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D3B0E741F6985F33EA61E5 /* Pods-My First Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +451,7 @@
 		};
 		C68031E42A6E2AAE00FEF811 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF614EEF1CFA0F47757B11EC /* Pods-My First Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
