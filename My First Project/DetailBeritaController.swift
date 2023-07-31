@@ -24,9 +24,7 @@ class DetailBeritaController: UIViewController {
         isiDetail.text = dataDetail["isi_berita"] as? String
         
         imageDetail?.sd_setImage(with: URL(string: "\(Api.imageUrl)\(dataDetail["gambar_berita"] ?? "")"))
-        
-
-        // Do any additional setup after loading the view.
+    
     }
     
     @IBAction func btnBackDetail(_ sender: Any) {

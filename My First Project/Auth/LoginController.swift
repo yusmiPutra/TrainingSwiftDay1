@@ -35,9 +35,6 @@ class LoginController: UIViewController {
                         //ini untuk menyimpada data dalam bentuk json String
                         if let data = try? JSONSerialization.data(withJSONObject: jsonData, options: []) {
                             UserDefaults.standard.set(data, forKey: "userData")
-                            
-                            //menyimpan data dalam bentuk 1 object saja
-//                            UserDefaults.standard.set(self.username.text ?? "", forKey: "username")
                         } else {
                             print("Error converting JSON data to Data Object")
                         }

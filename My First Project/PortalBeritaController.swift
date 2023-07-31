@@ -87,77 +87,107 @@ class PortalBeritaController: UIViewController {
         alert.addAction(actionNo)
         present(alert, animated: true, completion: nil)
     }
-    
-    @IBAction func btnBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
 
 
 extension PortalBeritaController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listBerita.count
+        if searchData.text != "" {
+            return filterBerita.count
+        } else {
+            return listBerita.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
         let cell = tabelViewBerita.dequeueReusableCell(withIdentifier: "cellBerita", for: indexPath) as! BeritaCell
         
-        let item = listBerita[indexPath.row]
-        
-        cell.judulBerita.text = item["judul"] as? String
-        
-        DispatchQueue.global().async {
-            let strImageBerita = "\(Api.imageUrl)\(item["gambar_berita"] ?? "")"
+        if searchData.text != "" {
+            let item = filterBerita[indexPath.row]
             
-            if let imageUrl = URL(string: strImageBerita) {
-                if let dataImg = try? Data(contentsOf: imageUrl) {
-                    guard let image = UIImage(data: dataImg) else {
-                        return
+            cell.judulBerita.text = item["judul"] as? String
+            
+            DispatchQueue.global().async {
+                let strImageBerita = "\(Api.imageUrl)\(item["gambar_berita"] ?? "")"
+                
+                if let imageUrl = URL(string: strImageBerita) {
+                    if let dataImg = try? Data(contentsOf: imageUrl) {
+                        guard let image = UIImage(data: dataImg) else {
+                            return
+                        }
+                        DispatchQueue.main.async {
+                            cell.imageBerita.image = image
+                        }
                     }
-                    DispatchQueue.main.async {
-                        cell.imageBerita.image = image
+                }
+            }
+        } else {
+            let item = listBerita[indexPath.row]
+            
+            cell.judulBerita.text = item["judul"] as? String
+            
+            DispatchQueue.global().async {
+                let strImageBerita = "\(Api.imageUrl)\(item["gambar_berita"] ?? "")"
+                
+                if let imageUrl = URL(string: strImageBerita) {
+                    if let dataImg = try? Data(contentsOf: imageUrl) {
+                        guard let image = UIImage(data: dataImg) else {
+                            return
+                        }
+                        DispatchQueue.main.async {
+                            cell.imageBerita.image = image
+                        }
                     }
                 }
             }
         }
+    
+       
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let detaiVc = storyBoard.instantiateViewController(withIdentifier: "DetailBerita") as! DetailBeritaController
         
-        let data = listBerita[indexPath.row]
-        detaiVc.dataDetail = data
-        self.present(detaiVc, animated: true, completion: nil)
+        if searchData.text != "" {
+            let detaiVc = storyBoard.instantiateViewController(withIdentifier: "DetailBerita") as! DetailBeritaController
+            
+            let data = filterBerita[indexPath.row]
+            detaiVc.dataDetail = data
+            self.present(detaiVc, animated: true, completion: nil)
+        } else {
+            let detaiVc = storyBoard.instantiateViewController(withIdentifier: "DetailBerita") as! DetailBeritaController
+            
+            let data = listBerita[indexPath.row]
+            detaiVc.dataDetail = data
+            self.present(detaiVc, animated: true, completion: nil)
+        }
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText != "" {
-            filterBerita = listBerita.filter { dataItem in
+        var searchDebounceTimer: Timer?
+        searchDebounceTimer?.invalidate()
+        
+        // Use a guard statement to handle the empty case.
+        guard !searchText.isEmpty else {
+            self.filterBerita = listBerita
+            tabelViewBerita.reloadData()
+            return
+        }
+        
+        // Start a new timer to debounce the filtering operation.
+        searchDebounceTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { [weak self] _ in
+            self?.filterBerita = self?.listBerita.filter { dataItem in
                 if let item = dataItem["judul"] as? String {
                     return item.lowercased().contains(searchText.lowercased())
                 }
                 return false
+            } ?? []
+            DispatchQueue.main.async {
+                self?.tabelViewBerita.reloadData()
             }
-            tabelViewBerita.reloadData()
-        } else {
-            self.filterBerita = listBerita
-            tabelViewBerita.reloadData()
         }
     }
 }
